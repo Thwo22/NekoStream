@@ -4,6 +4,56 @@ body {
     background-color: rgb(31, 31, 31);
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.navegacao {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    overflow-x: scroll;
+    transform: translate(-50%);
+}
+
+.barra {
+    width: 70px;
+    height: 30px;
+    border: 2px solid orangered;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.barra:hover {
+    background-color: orangered;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
 }
