@@ -9,12 +9,12 @@ function Header() {
             <header className={styles.header}>
                 <img src={nekologo} alt="Imagem-logo" className={styles.logo_img} />
                 <div className={styles.navs}>
-                    <nav>Filmes</nav>
-                    <nav>Populares</nav>
-                    <nav>Lançamentos</nav>
-                    <nav>Minha Lista</nav>
-                    <nav>Favoritos</nav>
-                    <nav>Categorias</nav>
+                    <nav><a href="#">Filmes</a></nav>
+                    <nav><a href="#">Populares</a></nav>
+                    <nav><a href="#">Lançamentos</a></nav>
+                    <nav><a href="#">Minha Lista</a></nav>
+                    <nav><a href="#">Favoritos</a></nav>
+                    <nav><a href="#">Categorias</a></nav>
                 </div>
                 <input type="search" placeholder="Pesquisar Anime"/>
                 <div className={styles.conta_idioma}>
