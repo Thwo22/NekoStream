@@ -5,12 +5,12 @@
 .box_img {
     width: 100%;
     min-width: 100vw;
-    height: 80vh;
+    height: 90vh;
 }
 
 .box_img > img {
     width: 100%;
-    height: 85vh;
+    height: 90vh;
 }
 
 .container_logos {
@@ -81,7 +81,7 @@
 .animes_buttons {
     display: flex;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%);
     gap: 10px;
@@ -91,13 +91,15 @@
 .animes_buttons input[type="radio"] {
     padding: 0;
     width: 12px;
-    height: 6px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    height: 8px;
+    transition: background-color 0.5s ease, border-color 0.3s ease;
 }
 
 .animes_buttons input[type="radio"]:checked {
-    background-color: #fff; 
-    border-color: #eee; 
+    background-color:  rgb(255, 163, 44); 
+    border-color: rgb(255, 163, 44);
+    width: 8px;
+    border-radius: 50%;
 }
 
 
