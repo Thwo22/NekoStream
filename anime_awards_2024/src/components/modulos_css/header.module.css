@@ -5,15 +5,15 @@
     background-color: rgba(0, 0, 0, 0.774);
     padding: 0;
     margin: 0;
-    height: 3em;    
+    height: 5em;    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .logo_img{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 }
 
 .navs {
@@ -22,14 +22,14 @@
     justify-content: space-between;
     width: 40vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     cursor: pointer;
 }
 
 ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 30px;
     justify-content: left;
 }
 
@@ -79,9 +79,9 @@ ul li:hover ul.dropdown {
 input {
     all: unset;
     border: 1px solid rgb(136, 136, 136);
-    padding: 5px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     border-radius: 3px;
 }
 
@@ -89,12 +89,12 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:5em;
+    width:7em;
 }
 
 .icones {
-    width: 20px;
-    height:20px;  
+    width: 30px;
+    height:30px;  
     padding: 5px;
     cursor: pointer;
 }

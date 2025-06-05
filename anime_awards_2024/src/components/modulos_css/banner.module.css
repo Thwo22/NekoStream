@@ -15,10 +15,10 @@
 
 .container_logos {
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 3%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 .container_logos > img {
@@ -34,18 +34,17 @@
 .container_buttons > button {
     all: unset;
     
-    padding: 6px;
+    padding: 10px;
     text-align: center;
-    font-size: 9px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     border-radius: 6px;
     border: 1px solid rgb(128, 128, 128);
     cursor: pointer;
 }
 
 .container_buttons > .episodeos_btn:hover, .container_buttons > .assistir_btn:hover  {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 163, 44);
 }
 
 .container_buttons > .assistir_btn {
@@ -55,7 +54,7 @@
 
 .info_banner {
     position: relative;
-    top: -10%;
+    top: -5%;
     display: flex;
     align-items: center;
     margin: 0;
@@ -66,7 +65,7 @@
     padding: 5px;
     background-color: gray;
     border-radius: 6px;
-    font-size: 6px;
+    font-size: 9px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -74,7 +73,7 @@
     position: relative;
     top: -20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     text-align: justify;
 }
 
@@ -108,12 +107,12 @@
 }
 .naruto_logo > p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 133px;
+    font-size: 13px;
 }
 
 .jujutsu_logo {
     position: absolute;
-    top: 5%;
+    top: 20%;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -121,19 +120,20 @@
 }
 
 .jujutsu_logo > p {
+    font-size: 22px;
     padding: 0;
+    margin: 0;
 }
 
 .jujutsu_logo >img {
     width: 250px;
-    height: 150px;
-    padding: 0;
-    margin:  2em 0 0 0;
+    height: 100px;
+    padding: 15px;
 }
 
 .jojos_logo {
     position: absolute;
-    top: 16%;
+    top: 25%;
     font-family: Arial, Helvetica, sans-serif;
 }
 .jojos_logo > img {
@@ -142,7 +142,7 @@
 
 .dbz_logo {
     position: absolute;
-    top: 12%;
+    top: 20%;
     font-family: Arial, Helvetica, sans-serif;
 }
 .dbz_logo > img {
