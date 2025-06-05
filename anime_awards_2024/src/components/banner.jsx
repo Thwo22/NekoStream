@@ -18,7 +18,7 @@ const bannerData = [
         age: "+12",
         genres: ["SHONEN", "AVENTURA"],
         sinopse:
-        "Naruto acompanha a história de Naruto Uzumaki, um jovem ninja que sonha em se tornar o maior líder de sua vila, o Hokage. Marcado desde o nascimento por abrigar dentro de si a poderosa Raposa de Nove Caudas, ele enfrenta o preconceito dos moradores enquanto busca reconhecimento, amizade e força para proteger quem ama.",
+        "Naruto acompanha a história de Naruto Uzumaki, um jovem ninja que sonha em se tornar o maior líder de sua vila, o Hokage.",
     },
     {
         id: 1,
@@ -27,7 +27,7 @@ const bannerData = [
         age: "+16",
         genres: ["SHONEN", "AÇÃO", "FANTASIA"],
         sinopse:
-        "Yuji Itadori, um estudante do ensino médio, se envolve com o mundo das maldições e se torna hospedeiro de Sukuna, um poderoso espírito amaldiçoado. Ele se junta à Escola Jujutsu para aprender a controlar seus poderes e lutar contra outras maldições.",
+        "Yuji Itadori, um estudante do ensino médio, se envolve com o mundo das maldições e se torna hospedeiro de Sukuna, um poderoso espírito amaldiçoado. ",
     },
     {
         id: 2,
@@ -45,7 +45,7 @@ const bannerData = [
         age: "+10",
         genres: ["AÇÃO", "LUTAS", "SCI-FI"],
         sinopse:
-        "Dragon Ball Z narra as aventuras de Goku e seus amigos, que defendem a Terra contra uma variedade de vilões intergalácticos. A série é conhecida por suas intensas batalhas e transformações.",
+        "Dragon Ball narra as aventuras de Goku e seus amigos, que defendem a Terra contra uma variedade de vilões intergalácticos. A série é conhecida por suas intensas batalhas e transformações.",
     },
 ];
 
@@ -100,7 +100,7 @@ function Banner() {
 
             </div>
 
-            <div className={`${styles.container_logos} ${currentBannerInfo}`}>
+            <div className={`${styles.container_logos} ${currentBannerInfo.classLogo}`}>
                 <img src={currentBannerInfo.logoImg} alt="logo-anime"/>
                 <div className={styles.info_banner}>
                     <p>{currentBannerInfo.age}</p>
