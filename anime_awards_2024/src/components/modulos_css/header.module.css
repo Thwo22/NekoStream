@@ -5,15 +5,15 @@
     background-color: rgba(0, 0, 0, 0.774);
     padding: 0;
     margin: 0;
-    height: 5em;    
+    height: 3em;    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .logo_img{
-    width: 130px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
 }
 
 .navs {
@@ -22,7 +22,7 @@
     justify-content: space-between;
     width: 40vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 10px;
     cursor: pointer;
 }
 
@@ -37,8 +37,9 @@ a:hover{
 input {
     all: unset;
     border: 1px solid rgb(136, 136, 136);
-    padding: 10px;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
     border-radius: 3px;
 }
 
