@@ -1,6 +1,8 @@
 import React from "react";
 import AnimeCard from "./AnimeCard";
 import styles from "./modulos_css/populares.module.css"
+import prev_button from "../assets/icones/prev_button.png"
+import next_button from "../assets/icones/next_button.png"
 
 function SessaoPopulares() {
     const animesPopulares = [
@@ -19,6 +21,7 @@ function SessaoPopulares() {
         <div className={styles.sessaoPopulares}>
             <h2>Popular</h2>
             <div className={styles.animes_da_sessao}>
+                <button className={styles.prev_button}><img src={prev_button} alt="botao de voltar" /></button>
                 {animesPopulares.map((anime) => (
                     <AnimeCard
                         key={anime.id}
@@ -26,6 +29,7 @@ function SessaoPopulares() {
                         imageUrl={anime.imageUrl}
                         />
                 ))}
+                <button className={styles.next_button}><img src={next_button} alt="botao de avançar" /></button>
             </div>
         </div>
     );
