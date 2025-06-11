@@ -80,6 +80,7 @@ function Banner() {
             <div className={styles.box_img}>
                 
                 <img src={bannerNaruto} alt="Naruto-banner" />
+                
             </div>
 
             <div className={styles.box_img}>

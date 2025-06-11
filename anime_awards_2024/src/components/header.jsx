@@ -16,7 +16,7 @@ function Header() {
                             <li><a href="#">Minha lista</a></li>
                             <li><a href="#">Favoritos</a></li>
                             <li>
-                                <a href="#">Categorias</a>
+                                <a href="#">Categorias <span className={styles.setinha_emogi}>▼</span></a>
                                 <ul className={styles.dropdown}>
                                     <li>Shounen</li>
                                     <li>Seinen</li>

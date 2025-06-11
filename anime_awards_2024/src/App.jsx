@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/header'
 import Banner from './components/banner'
+import SessaoPopulares from './components/populares'
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <>
     <Header />
     <Banner />
-      
+    <SessaoPopulares />
     </>
   )
 }
