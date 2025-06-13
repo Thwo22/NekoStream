@@ -23,18 +23,29 @@
 
 .info {
     position: relative;
-    top: -109%;
+    top: -121%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    background-color: rgba(0, 0, 0, 0.767);
-    height:280px;
+    background-color: rgba(0, 0, 0, 0.829);
+    height:285px;
     width: 170px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.anime_card:hover > .info {
+    opacity: 1;
+}
+.anime_card:hover > .anime_title {
+    opacity: 0;
+}
+.anime_card:hover > img {
+    height:280px;
 }
 
 .info_anime {
-    border: brown 2px solid;
     height: 170px;
     width: 95%;
 }
