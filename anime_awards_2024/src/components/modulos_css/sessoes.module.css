@@ -15,6 +15,14 @@
     position: absolute;
     top: 155%;
 }
+.sessaoComedia {
+    position: absolute;
+    top: 217%;
+}
+.sessaoRomance {
+    position: absolute;
+    top: 278.3%;
+}
 
 h2 {
     font-family: var(--span-font);
