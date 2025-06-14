@@ -5,14 +5,22 @@
 }
 
 .sessao {
-    margin-left: 25px;
-    width: 95%;
+    width: 100%;
     height: 20px;
+}
+.sessaoPopular {
     position: absolute;
+}
+.sessaoSeinen {
+    position: absolute;
+    top: 155%;
 }
 
 h2 {
     font-family: var(--span-font);
+    margin: 0;
+    padding: 0;
+    margin: 0 0 -40px 3em;
 }
 
 .animes_da_sessao{

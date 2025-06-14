@@ -19,6 +19,7 @@
     font-family: var(--span-font);
     font-size: 14px;
     font-weight: light;
+    margin: 0;
 }
 
 .info {

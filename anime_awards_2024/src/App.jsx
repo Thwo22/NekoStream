@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Styles from "./components/modulos_css/app.module.css"
 import Header from './components/header'
 import Banner from './components/banner'
 import SessaoPopulares from './components/populares'
@@ -11,7 +12,10 @@ function App() {
     <>
     <Header />
     <Banner />
-    <SessaoPopulares />
+    <div className={Styles.container_das_sessoes}>
+      <SessaoPopulares />
+      <SessaoSeinen />
+    </div>
     </>
   )
 }

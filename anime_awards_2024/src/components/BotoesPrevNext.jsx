@@ -3,7 +3,7 @@ import styles from "./modulos_css/botoes.module.css"
 import prev_button from "../assets/icones/prev_button.png"
 import next_button from "../assets/icones/next_button.png"
 
-function NavigationsButtons({scrollRef, scrollAmout = 620}) {
+function NavigationsButtons({scrollRef, scrollAmout = 1200}) {
 
     const [comeco, setComeco] = useState(true);
     const [fim, setFim] = useState(false);

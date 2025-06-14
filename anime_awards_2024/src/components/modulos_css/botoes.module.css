@@ -1,18 +1,37 @@
 .prev_button, .next_button{
     all: unset;
-    padding: 30px;
-    height: 290px;
+    padding: 10px;
+    height: 100%;
+    width: 60px;
     cursor: pointer;
-    border-radius: 8px 0 0 8px;
+
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
+
 .prev_button {
-    left:-4%;
-    background-image: linear-gradient(to left, rgba(247, 247, 247, 0) 0%, black 30%);
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .next_button {
-    left: 97.5%;
+    right: 0;
     border-radius: 0 8px 8px 0;
-    background-image: linear-gradient(to right, rgba(247, 247, 247, 0) 0%,  black 30%);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.prev_button:hover, .next_button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }

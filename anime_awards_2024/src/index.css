@@ -37,3 +37,9 @@ body p, h1 {
   border-radius: 8px;
   border: 2px solid yellow;
 }
+
+.container_das_sessoes {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
