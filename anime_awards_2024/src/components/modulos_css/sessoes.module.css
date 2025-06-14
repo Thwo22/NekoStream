@@ -4,14 +4,14 @@
     --span-font: "Lato", sans-serif;
 }
 
-.sessaoPopulares {
-    position: absolute;
-    margin-left: 45px;
+.sessao {
+    margin-left: 25px;
     width: 95%;
     height: 20px;
+    position: absolute;
 }
 
-.sessaoPopulares h2 {
+h2 {
     font-family: var(--span-font);
 }
 

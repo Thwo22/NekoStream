@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
 import AnimeCard from "./AnimeCard";
-import styles from "./modulos_css/sessoes.module.css"
 import NavigationButtons from "./BotoesPrevNext";
 
-function SessaoPopulares() {
+function SessaoSeinen() {
 
     const scrollRef = useRef();
 
@@ -20,7 +19,7 @@ function SessaoPopulares() {
         {id: 10, title: "Jojo´s Bizarre...", imageUrl: "https://i.pinimg.com/736x/d2/20/44/d220449638e55c256e15a185331f4dbe.jpg", sinopse: "Cada geração da família Joestar enfrenta ameaças sobrenaturais e vilões excêntricos, com habilidades únicas e batalhas insanas ao redor do mundo."},
     ]
     return (
-        <div className={styles.sessao}>
+        <div className={styles.sessaoPopulares}>
             <h2>Popular</h2>
             <div className={styles.animes_da_sessao} ref={scrollRef}>
                 <div className={styles.wrapper}>
@@ -39,4 +38,4 @@ function SessaoPopulares() {
     );
 }
 
-export default SessaoPopulares;
+export default SessaoSeinen;

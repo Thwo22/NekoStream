@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/header'
 import Banner from './components/banner'
 import SessaoPopulares from './components/populares'
+import SessaoSeinen from './components/seinen'
 
 
 function App() {
