@@ -6,6 +6,7 @@ import SessaoPopulares from './components/populares'
 import SessaoSeinen from './components/seinen'
 import SessaoComedia from './components/comedia'
 import SessaoRomance from './components/romance'
+import SessaoAlta from './components/alta'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <SessaoSeinen />
       <SessaoComedia />
       <SessaoRomance />
+      <SessaoAlta />
     </div>
     </>
   )
