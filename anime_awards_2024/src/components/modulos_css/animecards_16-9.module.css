@@ -66,29 +66,26 @@
     z-index: 2;
 }
 
-.titulo_idade{
+.title_controles_episodeos {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-}
-.titulo_idade img {
-    width: 32px;
-    height: 32px;
+    justify-content: space-around;
+    height: 100%;
+    gap: 0;
+    padding: 0;
 }
 
-.genero_controles {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 15px;
-    height: 80px;
+.idade_generos img {
+    width: 35px;
+    height: 35px;
 }
 .generos {
     display: flex;
-    flex-direction: row;
+    flex-direction: c;
+    align-items: center;
+    justify-content: center;
     font-family: var(--span-font);
-    gap: 50px;
 }
 
 .anime_card:hover > .info {
@@ -140,4 +137,8 @@
 .addList_button img {
     width: 22px;
     height: 22px;
+}
+
+.title {
+    margin: 0px;
 }

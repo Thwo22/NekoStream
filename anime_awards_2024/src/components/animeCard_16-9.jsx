@@ -3,7 +3,7 @@ import play from "../assets/icones/play.png"
 import salvar from "../assets/icones/salvar.png"
 import React, { useRef } from "react"
 
-function AnimeCard({title, imageUrl, genero, videoUrl, idade}) {
+function AnimeCard({title, imageUrl, videoUrl, episodeos}) {
     const iframeRef = useRef(null);
     const [isHovered, setIsHovered] = React.useState(false);
 
@@ -41,20 +41,16 @@ function AnimeCard({title, imageUrl, genero, videoUrl, idade}) {
             </div>
 
             <div className={styles.info}>
-                <div className={styles.titulo_idade}>
-                    <div><p className={styles.title}>{title}</p></div>
-                    <div><img src={idade}/></div>
-                </div>
 
-                <div className={styles.genero_controles}>
-                    <div>
-                        <span className={styles.generos}>{genero}</span>
-                    </div>
+                <div className={styles.title_controles_episodeos}>
+                    <div><p className={styles.title}>{title}</p></div>
+                    <p className={styles.episodeos}>{episodeos}</p>
                     <div className={styles.controles}>
                         <button className={styles.play_button}><img src={play} alt="play image" /></button>
                         <button className={styles.addList_button}><img src={salvar} alt="salvar image"/></button>
                     </div>
                 </div>
+
             </div>
         </div>
     )
