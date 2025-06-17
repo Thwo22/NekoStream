@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --span-font: "Lato", sans-serif;
+}
+
 .slider_container {
     display: flex;
 }
@@ -33,7 +39,6 @@
 
 .container_buttons > button {
     all: unset;
-    
     padding: 10px;
     text-align: center;
     font-size: 14px;
@@ -50,6 +55,11 @@
 .container_buttons > .assistir_btn {
     background-color:rgb(255, 163, 44);
     text-shadow: 0 0 5px black;
+    font-family: var(--span-font);
+}
+
+.assistir_btn, .episodeos_btn  {
+    font-family: var(--span-font);
 }
 
 .info_banner {
@@ -101,10 +111,6 @@
     border-radius: 50%;
 }
 
-
-.naruto_logo {
-
-}
 .naruto_logo > p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
