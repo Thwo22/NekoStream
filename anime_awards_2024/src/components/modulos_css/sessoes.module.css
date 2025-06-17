@@ -10,7 +10,17 @@
 }
 .sessaoAlta {
     position: absolute;
+    top: 90%;
+    height: 40px;
 }
+.sessaoAlta .animes_da_sessao {
+    height: 400px;
+    align-items: self-start;
+}
+.sessaoAlta h2 {
+    margin: 0 0 10px 3em;
+}
+
 .sessaoPopular {
     position: absolute;
     top: 155%;

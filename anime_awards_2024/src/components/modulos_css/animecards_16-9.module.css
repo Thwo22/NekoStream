@@ -55,9 +55,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 5px;
+    padding: 5px;
+    gap: 2px;
     background-color: rgb(27, 27, 27);
-    height:75px;
+    height:120px;
     width: 350px;
     opacity: 0;
     transition: opacity 0.4s ease;
@@ -65,12 +66,37 @@
     z-index: 2;
 }
 
+.titulo_idade{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.titulo_idade img {
+    width: 32px;
+    height: 32px;
+}
+
+.genero_controles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    height: 80px;
+}
+.generos {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--span-font);
+    gap: 50px;
+}
+
 .anime_card:hover > .info {
     opacity: 1;
 }
 
 .info_anime {
-    height: 170px;
+    height: 20px;
     width: 100%;
 }
 
@@ -91,8 +117,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     padding: 20px;
     cursor: pointer;
     border-radius: 8px;
