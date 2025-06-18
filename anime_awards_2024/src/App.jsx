@@ -15,17 +15,18 @@ function App() {
 
   return (
     <>
-    <Header />
-    <Banner />
-    <div className={Styles.container_das_sessoes}>
-      <SessaoPopulares />
-      <SessaoSeinen />
-      <SessaoComedia />
-      <SessaoLista />
-      <SessaoRomance />
-      <SessaoAlta />
-    </div>
-    <MinhaListaProvider />
+    <MinhaListaProvider>
+      <Header />
+      <Banner />
+      <div className={Styles.container_das_sessoes}>
+        <SessaoPopulares />
+        <SessaoSeinen />
+        <SessaoComedia />
+        <SessaoLista />
+        <SessaoRomance />
+        <SessaoAlta />
+      </div>
+    </MinhaListaProvider>
     </>
   );
 }

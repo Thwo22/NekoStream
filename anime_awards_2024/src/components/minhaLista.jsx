@@ -8,6 +8,7 @@ import { useMinhaLista } from "./contexts/minhaListacontext";
 function SessaoLista() {
 
     const { minhaLista } = useMinhaLista();
+    console.log("minhaLista renderizando...", minhaLista);
     const scrollRef = useRef();
 
     if (minhaLista.length === 0) return null;

@@ -1,10 +1,11 @@
 import styles from "./modulos_css/animecards_16-9.module.css"
 import play from "../assets/icones/play.png"
 import salvar from "../assets/icones/salvar.png"
+import remover from "../assets/icones/remover.png"
 import React, { useRef } from "react"
 import { useMinhaLista } from "./contexts/minhaListacontext"
 
-function AnimeCard({title, imageUrl, videoUrl, episodeos}) {
+function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse}) {
     const iframeRef = useRef(null);
     const [isHovered, setIsHovered] = React.useState(false);
 
@@ -17,14 +18,21 @@ function AnimeCard({title, imageUrl, videoUrl, episodeos}) {
 
     const embedUrl = getEmbedUrl(videoUrl);
 
-    const estaNaLista = MinhaListaProvider.some((anime) => anime.id === id);
+    const { minhaLista, adicionarAnime, removerAnime} = useMinhaLista();
+    const estaNaLista = minhaLista.some((anime) => anime.id === id);
 
     const handleClick = () => {
+        console.log("Clicado!", title);
+
         if (estaNaLista) {
+            console.log ("Removendo...");
             removerAnime(id);
         } else {
+            console.log("Adicionando...");
             adicionarAnime({id, title, imageUrl, sinopse});
         }
+
+        console.log("lista atual:", MinhaLista);
     };
 
     return (
@@ -58,8 +66,13 @@ function AnimeCard({title, imageUrl, videoUrl, episodeos}) {
                     <p className={styles.episodeos}>{episodeos}</p>
                     <div className={styles.controles}>
                         <button className={styles.play_button}><img src={play} alt="play image" /></button>
-                        <button className={styles.addList_button} onClick={handleClick}><img src={salvar} alt="salvar image"/>
-                        {estaNaLista ? "remover" : "Salvar"}</button>
+                        <button className={styles.addList_button} onClick={handleClick} title={estaNaLista ? "Remover da lista" : "Adicionar a Sua Lista"}>
+                        {estaNaLista ? (
+                            <img src={remover} alt="Remover da lista" />
+                        ) : (
+                            <img src={salvar} alt="salvar image" />
+                        )}
+                        </button>
                     </div>
                 </div>
             </div>
