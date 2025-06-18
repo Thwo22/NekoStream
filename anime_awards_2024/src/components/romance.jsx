@@ -29,6 +29,7 @@ function SessaoRomance() {
                 {animesRomance.map((anime) => (
                     <AnimeCard
                         key={anime.id}
+                        id={anime.id}
                         title={anime.title}
                         imageUrl={anime.imageUrl}
                         sinopse={anime.sinopse}

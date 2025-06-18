@@ -7,6 +7,8 @@ import SessaoSeinen from './components/seinen'
 import SessaoComedia from './components/comedia'
 import SessaoRomance from './components/romance'
 import SessaoAlta from './components/alta'
+import SessaoLista from './components/minhaLista'
+import { MinhaListaProvider } from './components/contexts/minhaListacontext'
 
 
 function App() {
@@ -19,11 +21,13 @@ function App() {
       <SessaoPopulares />
       <SessaoSeinen />
       <SessaoComedia />
+      <SessaoLista />
       <SessaoRomance />
       <SessaoAlta />
     </div>
+    <MinhaListaProvider />
     </>
-  )
+  );
 }
 
 export default App

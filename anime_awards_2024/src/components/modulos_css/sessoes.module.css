@@ -29,13 +29,18 @@
     position: absolute;
     top: 217%;
 }
-.sessaoComedia {
+.sessaoLista {
     position: absolute;
     top: 278.3%;
 }
-.sessaoRomance {
+
+.sessaoComedia {
     position: absolute;
     top: 340.2%;
+}
+.sessaoRomance {
+    position: absolute;
+    top: 402%;
 }
 
 h2 {

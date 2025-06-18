@@ -2,6 +2,7 @@ import styles from "./modulos_css/animecards_16-9.module.css"
 import play from "../assets/icones/play.png"
 import salvar from "../assets/icones/salvar.png"
 import React, { useRef } from "react"
+import { useMinhaLista } from "./contexts/minhaListacontext"
 
 function AnimeCard({title, imageUrl, videoUrl, episodeos}) {
     const iframeRef = useRef(null);
@@ -15,6 +16,16 @@ function AnimeCard({title, imageUrl, videoUrl, episodeos}) {
     };
 
     const embedUrl = getEmbedUrl(videoUrl);
+
+    const estaNaLista = MinhaListaProvider.some((anime) => anime.id === id);
+
+    const handleClick = () => {
+        if (estaNaLista) {
+            removerAnime(id);
+        } else {
+            adicionarAnime({id, title, imageUrl, sinopse});
+        }
+    };
 
     return (
         <div className={styles.anime_card}
@@ -47,10 +58,10 @@ function AnimeCard({title, imageUrl, videoUrl, episodeos}) {
                     <p className={styles.episodeos}>{episodeos}</p>
                     <div className={styles.controles}>
                         <button className={styles.play_button}><img src={play} alt="play image" /></button>
-                        <button className={styles.addList_button}><img src={salvar} alt="salvar image"/></button>
+                        <button className={styles.addList_button} onClick={handleClick}><img src={salvar} alt="salvar image"/>
+                        {estaNaLista ? "remover" : "Salvar"}</button>
                     </div>
                 </div>
-
             </div>
         </div>
     )

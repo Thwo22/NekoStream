@@ -53,6 +53,7 @@ function SessaoAlta() {
                 {animesAlta.map((anime) => (
                     <AnimeCard
                         key={anime.id}
+                        id={anime.id}
                         title={anime.title}
                         imageUrl={anime.imageUrl}
                         videoUrl={anime.videoUrl}
