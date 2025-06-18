@@ -5,7 +5,7 @@ import remover from "../assets/icones/remover.png"
 import React, { useRef } from "react"
 import { useMinhaLista } from "./contexts/minhaListacontext"
 
-function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse}) {
+function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse, imagensVerticais}) {
     const iframeRef = useRef(null);
     const [isHovered, setIsHovered] = React.useState(false);
 
@@ -29,7 +29,9 @@ function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse}) {
             removerAnime(id);
         } else {
             console.log("Adicionando...");
-            adicionarAnime({id, title, imageUrl, sinopse});
+            adicionarAnime({id,
+                            title, 
+                            imageUrl: imagensVerticais  || imageUrl, sinopse});
         }
 
         console.log("lista atual:", MinhaLista);

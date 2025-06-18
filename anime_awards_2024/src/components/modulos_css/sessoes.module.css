@@ -33,6 +33,11 @@
     position: absolute;
     top: 278.3%;
 }
+.listaVazia {
+    position: absolute;
+    top: 800%;
+    left: 10%;
+}
 
 .sessaoComedia {
     position: absolute;
