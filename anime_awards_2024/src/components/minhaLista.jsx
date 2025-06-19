@@ -11,9 +11,8 @@ function SessaoLista() {
     return (
     <div className={`${styles.sessao} ${styles.sessaoLista}`}>
     <h2>Sua Lista</h2>
-    <div className={styles.wrapper}>
-            <NavigationButtons scrollRef={scrollRef} />
-            </div>
+    <NavigationButtons scrollRef={scrollRef} />
+    <div className={styles.wrapper}></div>
     {minhaLista.length === 0 ? (
         <p className={styles.listaVazia}>
             Você ainda não Adicionou animes à Lista.

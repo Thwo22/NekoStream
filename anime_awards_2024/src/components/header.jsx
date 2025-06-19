@@ -30,7 +30,7 @@ function Header() {
                 </div>
                 <input type="search" placeholder="Pesquisar Anime"/>
                 <div className={styles.conta_idioma}>
-                    <img src={conta} alt="" className={styles.icones}/>
+                    <img src={conta} alt="" className={styles.icones} />
                     <img src={idioma} alt="" className={styles.icones}/>
                 </div>
             </header>
