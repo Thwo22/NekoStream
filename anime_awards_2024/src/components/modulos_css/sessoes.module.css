@@ -10,7 +10,7 @@
 }
 .sessaoAlta {
     position: absolute;
-    top: 93%;
+    top: 91%;
     height: 40px;
 }
 .sessaoAlta .animes_da_sessao {
@@ -32,7 +32,8 @@
 .sessaoLista {
     position: absolute;
     top: 278.3%;
-
+    width: 99%;
+    left:1%;
 }
 .listaVazia {
     position: absolute;

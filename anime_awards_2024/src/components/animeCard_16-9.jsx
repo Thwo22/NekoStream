@@ -3,7 +3,6 @@ import play from "../assets/icones/play.png"
 import salvar from "../assets/icones/salvar.png"
 import remover from "../assets/icones/remover.png"
 import React, { useRef } from "react"
-import { useMinhaLista } from "./contexts/minhaListacontext"
 
 function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse, imagensVerticais}) {
     const iframeRef = useRef(null);
@@ -18,23 +17,8 @@ function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse, imagensVe
 
     const embedUrl = getEmbedUrl(videoUrl);
 
-    const { minhaLista, adicionarAnime, removerAnime} = useMinhaLista();
-    const estaNaLista = minhaLista.some((anime) => anime.id === id);
-
-    const handleClick = () => {
-        console.log("Clicado!", title);
-
-        if (estaNaLista) {
-            console.log ("Removendo...");
-            removerAnime(id);
-        } else {
-            console.log("Adicionando...");
-            adicionarAnime({id,
-                            title, 
-                            imageUrl: imagensVerticais  || imageUrl, sinopse});
-        }
-
-        console.log("lista atual:", MinhaLista);
+    const aviso = () => {
+        alert("Desculpe! O site é apenas uma inteface!")
     };
 
     return (
@@ -65,16 +49,9 @@ function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse, imagensVe
 
                 <div className={styles.title_controles_episodeos}>
                     <div><p className={styles.title}>{title}</p></div>
-                    <p className={styles.episodeos}>{episodeos}</p>
+                    <p className={styles.episodeos}>{episodeos}</p> 
                     <div className={styles.controles}>
-                        <button className={styles.play_button}><img src={play} alt="play image" /></button>
-                        <button className={styles.addList_button} onClick={handleClick} title={estaNaLista ? "Remover da lista" : "Adicionar a Sua Lista"}>
-                        {estaNaLista ? (
-                            <img src={remover} alt="Remover da lista" />
-                        ) : (
-                            <img src={salvar} alt="salvar image" />
-                        )}
-                        </button>
+                        <button className={styles.play_button}><img src={play} alt="play image" onClick={aviso} /></button>
                     </div>
                 </div>
             </div>

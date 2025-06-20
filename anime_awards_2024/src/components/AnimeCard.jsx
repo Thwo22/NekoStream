@@ -10,6 +10,10 @@ function AnimeCard({id, title, imageUrl, sinopse}) {
 
     const estaNaLista = minhaLista.some((anime) => anime.id === id);
 
+    const aviso = () => {
+        alert("Desculpe! O site é apenas uma inteface!")
+    };
+
     const handleClick = () => {
         console.log("Clicado!", title);
 
@@ -27,12 +31,12 @@ function AnimeCard({id, title, imageUrl, sinopse}) {
     return (
         <div className={styles.anime_card}>
             <img src={imageUrl} alt="imagem do anime" />
-            <span className={styles.anime_title}>{title}</span>
+            <p className={styles.anime_title}>{title}</p>
             <div className={styles.info}>
                 <p>{title}</p>
                 <span className={styles.info_anime}>{sinopse}</span>
                 <div className={styles.controles}>
-                    <button className={styles.play_button}><img src={play} alt="play image" /></button>
+                    <button className={styles.play_button}><img src={play} alt="play image" onClick={aviso}/></button>
                     <button className={styles.addList_button} onClick={handleClick} title={estaNaLista ? "Remover da lista" : "Adicionar a Sua Lista"}>
                     {estaNaLista ? (
                         <img src={remover} alt="Remover da lista" />

@@ -9,10 +9,12 @@ function SessaoLista() {
     const scrollRef = useRef();
 
     return (
+    
     <div className={`${styles.sessao} ${styles.sessaoLista}`}>
     <h2>Sua Lista</h2>
-    <NavigationButtons scrollRef={scrollRef} />
-    <div className={styles.wrapper}></div>
+    <div className={styles.wrapper}>
+        <NavigationButtons scrollRef={scrollRef}/>
+    </div>
     {minhaLista.length === 0 ? (
         <p className={styles.listaVazia}>
             Você ainda não Adicionou animes à Lista.
