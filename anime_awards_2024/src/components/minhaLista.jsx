@@ -1,3 +1,5 @@
+{/*IMPORTANTE!! Esta é a única sessão mais complexa que as demais, sua função é armazenar uma lista personalizada de animes que o próprio usuário decidir colocar dentro dela! */}
+
 import React, { useRef, useEffect } from "react";
 import styles from "./modulos_css/sessoes.module.css";
 import AnimeCard from "./AnimeCard";
@@ -6,8 +8,10 @@ import { useMinhaLista } from "./contexts/minhaListacontext";
 
 function SessaoLista() {
     const { minhaLista } = useMinhaLista();
-    const scrollRef = useRef();
 
+    const scrollRef = useRef(); {/*referência para os botoes de navegação da sessão*/}
+
+    {/* A -------> todos os códigos do ponto A ao ponto B servem para que seja disponível usar um cursor GRAB para navegar dentro da sessão SUA LISTA*/}
     useEffect(() => {
         const el = scrollRef.current;
         if (!el) return;
@@ -54,10 +58,14 @@ function SessaoLista() {
         };
     }, []);
 
+    {/*B*/}
+
     return (
         <div className={`${styles.sessao} ${styles.sessaoLista}`}>
             <h2>Sua Lista</h2>
-            {minhaLista.length === 0 ? (
+            
+            {/*CASO não tenha nenhum anime adicionado pelo usuário na sessão, o span dizendo "Voce ainda nao adicionou animes à lista" aparece*/}
+            {minhaLista.length === 0 ? ( 
                 <p className={styles.listaVazia}>
                     Você ainda não Adicionou animes à Lista.
                 </p>

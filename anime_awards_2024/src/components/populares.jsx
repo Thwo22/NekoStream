@@ -1,3 +1,5 @@
+{/*IMPORTANTE!! esse será a unica sessão (fora "sua lista" e "em alta" pois ela é um componente reutilizavel em todas as outras sessões, entendendo ela você entende a base de todas as sessões do site.*/}
+
 import React, { useRef } from "react";
 import AnimeCard from "./AnimeCard";
 import styles from "./modulos_css/sessoes.module.css"
@@ -5,8 +7,9 @@ import NavigationButtons from "./BotoesPrevNext";
 
 function SessaoPopulares() {
 
-    const scrollRef = useRef();
+    const scrollRef = useRef(); {/*referência para o botão de navegar lateralmente na sessão*/}
 
+    {/*array com props passadas para os cardAnimes verticais que essa sessão esta importando, esse arrays contém todos os dados dos animes dessas sessão*/}
     const animesPopulares = [
         {id: 6, 
             title: "Naruto", 
@@ -61,13 +64,15 @@ function SessaoPopulares() {
             imageUrl: "https://i.pinimg.com/736x/86/24/4f/86244f757e85a2baadbb08087b9f10b7.jpg", 
             sinopse: "Sung Jin-Woo, o caçador mais fraco da Coreia, desperta um poder misterioso que lhe permite evoluir sem limites, e se torna o caçador mais forte do mundo."},
     ]
+    {/*esta é a estrutura de todas as sessões, um container com varios cardAnimes em ROW, e um overflow x controlado por botões de navegação*/}
     return (
             <div className={`${styles.sessao} ${styles.sessaoPopular}`}>
             <h2>Popular</h2>
             <div className={styles.animes_da_sessao} ref={scrollRef}>
                 <div className={styles.wrapper}>
-                    <NavigationButtons scrollRef={scrollRef} />
+                    <NavigationButtons scrollRef={scrollRef} /> {/*este é o botão que controla o overflow-x do container*/}
                 </div>
+                {/*map das informações que o componente animecard (vertical) vai renderizar na tela.*/}
                 {animesPopulares.map((anime) => (
                     <AnimeCard
                         key={anime.id}

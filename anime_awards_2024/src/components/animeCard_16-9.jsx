@@ -1,13 +1,14 @@
+{/*IMPORTANTE!! Este anime card é diferente do AnimeCard convencional do site, ele foi especialmente feito para a sessão "Em alta" porque eu quis dar uma diferenciada no layout do site, ele faz quase tudo que o animeaCard vertical faz, a diferença é que suas proporções são diferentes, resumindo, esse é um animeCard Horizontal.*/}
 import styles from "./modulos_css/animecards_16-9.module.css"
 import play from "../assets/icones/play.png"
-import salvar from "../assets/icones/salvar.png"
-import remover from "../assets/icones/remover.png"
 import React, { useRef } from "react"
 
-function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse, imagensVerticais}) {
+{/*props abertas*/}
+function AnimeCard({ title, imageUrl, videoUrl, episodeos,}) {
     const iframeRef = useRef(null);
     const [isHovered, setIsHovered] = React.useState(false);
 
+    {/*aqui é basicamente um espaço onde eu posso colocar um vídeo, ou trailer que represente os animes da minha sessão em alta (iframe)*/}
     const getEmbedUrl = (url) => {
         const match = url.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/);
         if (!match) return null;
@@ -16,11 +17,13 @@ function AnimeCard({id, title, imageUrl, videoUrl, episodeos, sinopse, imagensVe
     };
 
     const embedUrl = getEmbedUrl(videoUrl);
-
+    
+    {/*aviso também presente no animeCard VERTICAL, o site não exibe animes!*/}
     const aviso = () => {
         alert("Desculpe! O site é apenas uma inteface!")
     };
 
+    {/*Se o mouse estiver passando por cima do AnimeCard, o video iframe dentro vai começar a rodar (sem som)*/}
     return (
         <div className={styles.anime_card}
         onMouseEnter={() => setIsHovered(true)}

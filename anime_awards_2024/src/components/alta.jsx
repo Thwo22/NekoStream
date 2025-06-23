@@ -1,3 +1,5 @@
+{/*IMPORTANTE!! Esta é a única sessão que usa o cardAnime 16:9 (horizontal), esse tipo de card tem algumas funcionalidades a menos que os cards verticais, ja que seu foco é de apenas demonstrar um iframe sobre o respectivo anime do array.*/}
+
 import React, { useRef } from "react";
 import AnimeCard from "./animeCard_16-9";
 import styles from "./modulos_css/sessoes.module.css";
@@ -44,13 +46,6 @@ function SessaoAlta() {
         },
     ];
 
-    const imagensVertical = {
-        1: "https://i.pinimg.com/736x/03/29/91/03299109b05bee26d709a811ef93c064.jpg",
-        2: "https://i.pinimg.com/736x/9e/65/74/9e65749202ce0af59ef4c6ada4aaff22.jpg",
-        3: "https://i.pinimg.com/736x/86/95/eb/8695eb4bd868dafedd7ea7912393ce06.jpg",
-        4: "https://i.pinimg.com/736x/86/24/4f/86244f757e85a2baadbb08087b9f10b7.jpg",
-        5: "https://i.pinimg.com/736x/c2/42/1e/c2421ebc4be52491b1ecfdb3a40dda83.jpg",
-    }
     return (
             <div className={`${styles.sessao} ${styles.sessaoAlta}`}>
             <h2>Em Alta</h2>
@@ -60,7 +55,6 @@ function SessaoAlta() {
                 </div>
 
                 {animesAlta.map((anime) => {
-                    const imagensVerticais = imagensVertical[anime.id];
                 
                     return (
                         <AnimeCard
@@ -70,7 +64,6 @@ function SessaoAlta() {
                             imageUrl={anime.imageUrl}
                             videoUrl={anime.videoUrl}
                             episodeos={anime.episodeos}
-                            imagensVertical={imagensVerticais[anime.id]}
                         />
                     );
                 })}
