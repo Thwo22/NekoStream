@@ -71,7 +71,7 @@
 
 
 .navs {
-    width: 60vw;
+    width: 36vw;
     font-size: 10px;
     margin-right: 3em;
 }
@@ -82,6 +82,7 @@ ul {
     gap: 30px;
     justify-content: left;
     padding: 10;
+    font-size: 12px;
 }
 
 ul li {
