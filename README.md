@@ -6,4 +6,4 @@ Organizei os animes em cards através de arrays com ID´s e informações genér
 
 Você também pode criar a sua propria sessão, adicionando seus animes favoritos a sua lista!
 
-Todo o código está Documentado para que você saiba o que cada qual o papel de cada parte dele. Espero que goste! 
+Todo o código está Documentado para que você saiba qual o papel de cada parte dele. Espero que goste! 
