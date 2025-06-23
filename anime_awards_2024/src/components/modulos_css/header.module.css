@@ -4,6 +4,39 @@
     --p-font: "Sen", sans-serif;
 }
 
+.mobile_menu {   
+        display: none;
+        position: absolute;
+        top: 100%;
+        right:0%;
+        z-index: 999;
+        transition: left 0.1s ease;
+    }
+    .mobile_menu > ul {
+        position: relative;
+        text-align: center;
+        background-color: rgb(29, 29, 29);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 110px;
+
+        margin: 0;
+        padding: 0px;
+        gap: 0;
+        border-radius: 0 0 0 8px;
+    }
+
+    .mobile_menu > ul > li {
+        width: 90px;
+        padding:10px;
+    }
+
+    .mobile_menu > ul > li:hover {
+        background-color: rgb(8, 8, 8);
+    }
+
 .header {
     position: absolute;
     top: 0%;
@@ -32,11 +65,23 @@
     cursor: pointer;
 }
 
+.mobile_menu {   
+    display: none;
+}
+
+
+.navs {
+    width: 60vw;
+    font-size: 10px;
+    margin-right: 3em;
+}
+
 ul {
     list-style: none;
     display: flex;
     gap: 30px;
     justify-content: left;
+    padding: 10;
 }
 
 ul li {
@@ -85,7 +130,7 @@ ul li:hover ul.dropdown {
 input {
     all: unset;
     border: 1px solid rgb(136, 136, 136);
-    padding: 10px;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-radius: 3px;
@@ -98,6 +143,10 @@ input {
     width:7em;
 }
 
+.menu {
+    display: none;
+}
+
 .icones {
     width: 30px;
     height:30px;  
@@ -107,5 +156,178 @@ input {
 
 .setinha_emogi {
     font-size: 10px;
+}
+
+@media (min-width: 651px) and (max-width:850px) {
+    .header {
+    height: 4em; 
+    }
+
+    .logo_img{
+    display: none;
+    width: 75px;
+    height: 75px;
+    }
+
+    input {
+    padding: 5px;
+    margin-right:0;
+    }
+
+    .desktop_menu {
+        display: flex;
+    }
+
+    .mobile_menu {   
+        display: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 10px ;
+        gap: 20px;
+    }
+
+    ul li {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    ul li ul.dropdown {
+        top: 155%;
+        left: -5%;
+    }
+
+    ul li ul.dropdown {
+    top: 185%;
+    left: -10%;
+}
+
+    .conta {
+        display: flex;
+        margin: 0;
+    }
+
+    .menu {
+    display: none;
+    }
+
+    .idioma {
+        display: none;
+    }
+}
+
+@media (min-width: 451px ) and (max-width:650px ) {
+    .header {
+    height: 3em; 
+    }
+
+    .logo_img{
+    width: 75px;
+    height: 75px;
+    }
+
+    input {
+    padding: 5px;
+    margin-right: 4em;
+    }
+
+    .desktop_menu {
+        display: none;
+    }
+
+    .mobile_menu {   
+        display: flex;
+    }
+
+    .ativo {
+        position: absolute;
+        right: 100%;
+    }
+
+    ul li ul.dropdown {
+        min-width: 110px;
+        background-color: rgb(29, 29, 29);
+        top: 100%;
+        left: 0%;
+    }
+
+    .conta {
+        display: flex;
+        margin: 0 10px;
+    }
+
+    .menu {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+    }
+
+    .idioma {
+        display: none;
+    }
+}
+
+@media (min-width: 300px ) and (max-width:450px )  {
+    
+    .header {
+    height: 3em; 
+    align-items: center;
+    justify-content: space-between;   
+    }
+
+    .logo_img{
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    }
+
+    input {
+    all: unset;
+    border: 1px solid rgb(136, 136, 136);
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 3px;
+    }
+
+    .desktop_menu {
+        display: none;
+    }
+
+    .mobile_menu {   
+        display: flex;
+        margin: 15px 0;
+    }
+
+    .ativo {
+        position: absolute;
+        right: 100%;
+    }
+
+    ul li ul.dropdown {
+    min-width: 110px;
+    background-color: rgb(29, 29, 29);
+    top: 100%;
+    left: 0%;
+    }
+
+    .conta {
+        display: none;
+    }
+
+    .menu {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 50%;
+    }
+
+    .idioma {
+        display: none;
+    }
 }
 
