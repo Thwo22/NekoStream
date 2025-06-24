@@ -51,8 +51,8 @@
 }
 
 .logo_img{
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
 }
 
 .navs {
@@ -71,7 +71,7 @@
 
 
 .navs {
-    width: 36vw;
+    width: 40vw;
     font-size: 10px;
     margin-right: 3em;
 }
@@ -82,7 +82,7 @@ ul {
     gap: 30px;
     justify-content: left;
     padding: 10;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 ul li {
@@ -131,7 +131,7 @@ ul li:hover ul.dropdown {
 input {
     all: unset;
     border: 1px solid rgb(136, 136, 136);
-    padding: 5px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-radius: 3px;
@@ -159,20 +159,14 @@ input {
     font-size: 10px;
 }
 
-@media (min-width: 651px) and (max-width:850px) {
+@media (min-width: 901px) and (max-width:1200px) {
     .header {
     height: 4em; 
     }
 
-    .logo_img{
-    display: none;
-    width: 75px;
-    height: 75px;
-    }
-
     input {
     padding: 5px;
-    margin-right:0;
+    margin-left:10em;
     }
 
     .desktop_menu {
@@ -184,15 +178,70 @@ input {
     }
 
     ul {
+        width: 50vw;
+    }
+
+    ul li ul.dropdown {
+        top: 155%;
+        left: -5%;
+    }
+
+    ul li ul.dropdown {
+    top: 185%;
+    left: -10%;
+    }
+
+    .conta {
+        display: flex;
+        margin-left: 2em;
+    }
+
+    .menu {
+    display: none;
+    }
+}
+
+@media (min-width: 740px) and (max-width:900px) {
+    .header {
+    height: 4em; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+
+    .logo_img{
+    width: 75px;
+    height: 75px;
+    }
+
+    input {
+    padding: 5px;
+    margin-left:10em;
+    }
+
+    .desktop_menu {
+        display: flex;
+    }
+
+    .mobile_menu {   
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0;
         padding: 10px ;
         gap: 20px;
+        width: 45vw;
     }
 
     ul li {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 0px;
+        font-size: 11px;
     }
 
     ul li ul.dropdown {
@@ -207,19 +256,15 @@ input {
 
     .conta {
         display: flex;
-        margin: 0;
+        margin-left: 2em;
     }
 
     .menu {
     display: none;
     }
-
-    .idioma {
-        display: none;
-    }
 }
 
-@media (min-width: 451px ) and (max-width:650px ) {
+@media (min-width: 451px ) and (max-width:739px ) {
     .header {
     height: 3em; 
     }
@@ -264,10 +309,6 @@ input {
     width: 25px;
     height: 25px;
     margin-right: 1em;
-    }
-
-    .idioma {
-        display: none;
     }
 }
 
@@ -325,10 +366,6 @@ input {
     width: 25px;
     height: 25px;
     margin-left: 50%;
-    }
-
-    .idioma {
-        display: none;
     }
 }
 
