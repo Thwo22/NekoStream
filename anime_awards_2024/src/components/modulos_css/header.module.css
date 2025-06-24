@@ -344,6 +344,7 @@ input {
     }
 
     .mobile_menu {   
+        top: 69%;
         display: flex;
         margin: 15px 0;
     }
