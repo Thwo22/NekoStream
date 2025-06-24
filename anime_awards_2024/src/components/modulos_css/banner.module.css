@@ -102,6 +102,7 @@
     width: 12px;
     height: 8px;
     transition: background-color 0.5s ease, border-color 0.3s ease;
+    margin: 5px;
 }
 
 .animes_buttons input[type="radio"]:checked {
@@ -154,3 +155,248 @@
 .dbz_logo > img {
     width: 200px;
 }
+
+@media (min-width: 740px) and (max-width:900px) {
+    .box_img {
+        height: 80vh;
+    }
+
+    .box_img > img {
+        height: 80vh;
+    }
+
+    .container_logos {
+        top: 15%;
+    }
+
+    .container_logos > img {
+        width: 200px;
+    }
+
+    .container_buttons > button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .info_banner {
+        top: -5%;
+    }
+
+    .info_banner > p {
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    .sinopse {
+        width: 40vw;
+        top: -10px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .animes_buttons {
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%);
+        gap: 1px;
+    }
+
+    .jujutsu_logo {
+        top: 15%;
+    }
+
+    .jujutsu_logo > p {
+        font-size: 11px;
+    }
+
+    .jujutsu_logo >img {
+        width: 180px;
+        height:60px;
+    }
+
+    .jojos_logo {
+        top: 15%;
+    }
+    .jojos_logo > img {
+        width: 150px;
+    }
+
+    .dbz_logo {
+        top: 12%;
+    }
+    .dbz_logo > img {
+        width: 150px;
+    }
+
+    .animes_buttons input[type="radio"] {
+    margin: 5px;
+    }
+}
+
+@media (min-width: 501px ) and (max-width:739px ) {
+    .box_img {
+        height: 60vh;
+    }
+
+    .box_img > img {
+        height: 60vh;
+    }
+
+    .container_logos {
+        top: 10%;
+    }
+
+    .container_logos > img {
+        width: 150px;
+    }
+
+    .container_buttons > button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .info_banner {
+        top: -5%;
+    }
+
+    .info_banner > p {
+        padding: 5px;
+        font-size: 6px;
+    }
+
+    .sinopse {
+        width: 40vw;
+        top: -10px;
+        font-size: 11px;
+        text-align: left;
+    }
+
+    .animes_buttons {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%);
+        gap: 1px;
+    }
+
+    .jujutsu_logo {
+        top: 8%;
+    }
+
+    .jujutsu_logo > p {
+        font-size: 11px;
+    }
+
+    .jujutsu_logo >img {
+        width: 150px;
+        height:60px;
+    }
+
+    .jojos_logo {
+        top: 10%;
+    }
+    .jojos_logo > img {
+        width: 120px;
+    }
+    .jojos p {
+        font-size: 13px;
+    }
+
+    .dbz_logo {
+        top: 9%;
+    }
+    .dbz_logo > img {
+        width: 150px;
+    }
+
+    .animes_buttons input[type="radio"] {
+    margin: 5px;
+    }
+}
+
+@media (min-width: 250px ) and (max-width:500px )  {
+
+    .box_img {
+        height: 40vh;
+    }
+
+    .box_img > img {
+        height: 40vh;
+    }
+
+    .container_logos {
+        top: 10%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .container_logos > img {
+        width: 80px;
+    }
+
+    .container_buttons > button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .info_banner {
+        top: -5%;
+    }
+
+    .info_banner > p {
+        padding: 3px;
+        font-size: 5px;
+    }
+
+    .sinopse {
+        width: 40vw;
+        top: -10px;
+        font-size: 7px;
+        text-align: left;
+    }
+
+    .animes_buttons {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        gap: 1px;
+    }
+
+    .jujutsu_logo {
+        top: 8%;
+    }
+
+    .jujutsu_logo > p {
+        font-size: 11px;
+    }
+
+    .jujutsu_logo >img {
+        width: 100px;
+        height:50px;
+    }
+
+    .jojos_logo {
+        top: 10%;
+    }
+    .jojos_logo > img {
+        width: 80px;
+    }
+    .jojos ´{
+        font-size: 11px;
+    }
+
+    .dbz_logo {
+        top: 10%;
+    }
+    .dbz_logo > img {
+        width: 100px;
+    }
+
+    .animes_buttons input[type="radio"] {
+        padding: 0;
+        width: 10px;
+        height: 5px;
+        margin: 2px;
+    }
+}
+
+

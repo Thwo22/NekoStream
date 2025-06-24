@@ -312,7 +312,7 @@ input {
     }
 }
 
-@media (min-width: 300px ) and (max-width:450px )  {
+@media (min-width: 250px ) and (max-width:450px )  {
     
     .header {
     height: 3em; 
@@ -329,11 +329,14 @@ input {
 
     input {
     all: unset;
+    width: 120px;
     border: 1px solid rgb(136, 136, 136);
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-radius: 3px;
+    margin-left: -50px;
+    margin-right:1em ;
     }
 
     .desktop_menu {
@@ -365,7 +368,6 @@ input {
     display: flex;
     width: 25px;
     height: 25px;
-    margin-left: 50%;
     }
 }
 

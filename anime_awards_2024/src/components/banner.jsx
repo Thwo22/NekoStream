@@ -45,7 +45,7 @@ const bannerData = [
         age: "+10",
         genres: ["AÇÃO", "LUTAS", "SCI-FI"],
         sinopse:
-        "Dragon Ball narra as aventuras de Goku e seus amigos, que defendem a Terra contra uma variedade de vilões intergalácticos. A série é conhecida por suas intensas batalhas e transformações.",
+        "Dragon Ball narra as aventuras de Goku e seus amigos, que defendem a Terra contra uma variedade de vilões intergalácticos.",
     },
 ];
 
