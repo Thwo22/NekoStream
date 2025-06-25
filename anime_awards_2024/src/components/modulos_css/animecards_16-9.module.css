@@ -140,6 +140,60 @@
 }
 
 @media (min-width: 901px) and (max-width:1200px) {
+    .anime_card {
+        height: 100px;
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .anime_card img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .video_preview {
+        width: 260px;
+        height: 160px;
+    }
+
+    .info {
+        top: 53%;
+        padding: 5px;
+        height:120px;
+        width: 250px;
+    }
+
+    .play_button img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (min-width: 451px ) and (max-width:739px ) {
+    .anime_card {
+        height: 50px;
+        width: 100px;
+        min-width: 250px;
+    }
+
+    .anime_card img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .video_preview {
+        top: -40%;
+        width: 220px;
+        height: 150px;
+    }
+
+    .info {
+        top: 135%;
+        padding: 5px;
+        height:120px;
+        width: 240px;
+    }
+
     
 }
 
@@ -186,15 +240,16 @@
     }
 
     .video_preview {
+        top: -40%;
         width: 220px;
         height: 150px;
     }
 
     .info {
-        top: 175%;
+        top: 135%;
         padding: 5px;
         height:120px;
-        width: 210px;
+        width: 240px;
     }
 
     .play_button img {
@@ -207,7 +262,7 @@
     .anime_card {
         height: 50px;
         width: 100px;
-        min-width: 250px;
+        min-width: 150px;
     }
 
     .anime_card img {
@@ -216,14 +271,14 @@
     }
 
     .video_preview {
-        top: -80%;
+        top: -120%;
         left: 0;
         width: 160px;
         height: 200px;
     }
 
     .info {
-        top: 100%;
+        top: 70%;
         height:80px;
         width: 150px;
         font-size: 11px;

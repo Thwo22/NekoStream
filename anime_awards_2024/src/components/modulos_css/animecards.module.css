@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    font-family: var(--span-font);
     background-color: rgba(0, 0, 0, 0.829);
     height:285px;
     width: 170px;
@@ -85,16 +86,158 @@
     font-size: 10px;
 }
 
-@media (min-width: 901px) and (max-width:1200px) {
-    
+@media (min-width: 901px ) and (max-width:1200px ) {
+    .anime_card {
+    width: 130px;
+    height: 190px;
+    }
+
+    .anime_card img {
+        width: 130px;
+        height: 190px;
+    }
+
+    .info {
+        top: -117%;
+        height:205px;
+        width: 130px;
+        font-size: 12px;
+        font-family: var(--span-font);
+    }
+
+    .anime_card:hover > .info {
+        opacity: 1;
+    }
+    .anime_card:hover > .anime_title {
+        opacity: 0;
+    }
+    .anime_card:hover > img {
+        height:205px;
+    }
+
+    .info_anime {
+        height: 170px;
+        width: 90%;
+    }
+
+    .controles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .controles button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15px;
+        width: 15px;
+        padding:15px;
+        margin-top: -30px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .play_button {
+        background-color: rgb(255, 163, 44);
+        border: none;
+    }
+    .play_button img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .addList_button {
+        border: 1px solid  rgb(255, 163, 44);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .addList_button img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .setinha_emogi {
+        font-size: 10px;
+    }
 }
 
-@media (min-width: 740px) and (max-width:900px) {
-    
-}
+@media (min-width: 451px ) and (max-width:900px ) {
+    .anime_card {
+    width: 130px;
+    height: 190px;
+    }
 
-@media (min-width: 451px ) and (max-width:739px ) {
-    
+    .anime_card img {
+        width: 130px;
+        height: 190px;
+    }
+
+    .info {
+        top: -117%;
+        height:205px;
+        width: 130px;
+        font-size: 12px;
+        font-family: var(--span-font);
+    }
+
+    .anime_card:hover > .info {
+        opacity: 1;
+    }
+    .anime_card:hover > .anime_title {
+        opacity: 0;
+    }
+    .anime_card:hover > img {
+        height:205px;
+    }
+
+    .info_anime {
+        height: 170px;
+        width: 90%;
+    }
+
+    .controles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .controles button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15px;
+        width: 15px;
+        padding:15px;
+        margin-top: -30px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .play_button {
+        background-color: rgb(255, 163, 44);
+        border: none;
+    }
+    .play_button img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .addList_button {
+        border: 1px solid  rgb(255, 163, 44);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .addList_button img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .setinha_emogi {
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 250px ) and (max-width:450px )  {
@@ -110,17 +253,11 @@
     }
 
     .info {
-        position: relative;
-        top: -135%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        background-color: rgba(0, 0, 0, 0.829);
-        height:285px;
-        width: 170px;
-        opacity: 0;
-        transition: opacity 0.1s ease;
+        top: -123%;
+        height:173px;
+        width: 100px;
+        font-size: 9px;
+        font-family: var(--span-font);
     }
 
     .anime_card:hover > .info {
@@ -130,19 +267,19 @@
         opacity: 0;
     }
     .anime_card:hover > img {
-        height:280px;
+        height:165px;
     }
 
     .info_anime {
         height: 170px;
-        width: 95%;
+        width: 100%;
     }
 
     .controles {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 30px;
+        gap: 15px;
         width: 100%;
     }
 
@@ -150,9 +287,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 20px;
-        width: 20px;
-        padding: 20px;
+        height: 15px;
+        width: 15px;
+        padding:15px;
+        margin-top: -55px;
         cursor: pointer;
         border-radius: 8px;
     }
