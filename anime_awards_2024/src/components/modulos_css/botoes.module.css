@@ -38,7 +38,7 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media (min-width: 250px ) and (max-width:900px )  {
+@media (min-width: 200px ) and (max-width:900px )  {
     .prev_button img, .next_button img {
         width: 22px;
     }

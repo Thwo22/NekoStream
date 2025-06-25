@@ -240,7 +240,7 @@
     }
 }
 
-@media (min-width: 250px ) and (max-width:450px )  {
+@media (min-width: 200px ) and (max-width:450px )  {
 
     .anime_card {
     width: 100px;

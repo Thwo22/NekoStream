@@ -312,7 +312,7 @@ input {
     }
 }
 
-@media (min-width: 250px ) and (max-width:450px )  {
+@media (min-width: 200px ) and (max-width:450px )  {
     
     .header {
     height: 3em; 
