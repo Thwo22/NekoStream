@@ -88,65 +88,69 @@
         width: 100%;
         height: 20px;
     }
+    
+    .animes_da_sessao p {
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+    }
+    
     .sessaoAlta {
         position: absolute;
-        top: 55%;
+        top:65%;
         height: 40px;
     }
 
     .sessaoAlta h2, .sessaoPopular h2, .sessaoSeinen h2, .sessaoComedia h2, .sessaoLista h2, .sessaoRomance h2 {
         font-size: 14px;
+        margin: 0 0 -35px 1em;
     }
 
     .sessaoPopular {
         position: absolute;
-        top:105%;
-    }
-
-    .sessaoPopular h2 {
-        margin: 0 0 -35px 1em;
-        z-index: 999;
+        top:100%;
     }
 
     .sessaoSeinen {
         position: absolute;
         top: 150%;
     }
+
     .sessaoLista {
         position: absolute;
         top: 200%;
-        width: 99%;
-        left:1%;
+        width: 109%;
+        left:3%;
         cursor: grab;
         user-select: none;
+    }
+
+    .sessaoLista p{
+        font-size: 9px;
     }
     .sessaoLista:active {
         cursor: grabbing;
     }
     .listaVazia {
         position: absolute;
-        top: 800%;
+        top: 500%;
         left: 10%;
     }
 
     .sessaoComedia {
         position: absolute;
-        top: 340.2%;
+        top: 250%;
     }
     .sessaoRomance {
         position: absolute;
-        top: 402%;
+        top: 300%;
     }
 
     .animes_da_sessao{
-        display: flex;
-        align-items: center;
         width: 100%;
         height: 230px;
         gap: 20px;
         margin-right:4em;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
 }
 
