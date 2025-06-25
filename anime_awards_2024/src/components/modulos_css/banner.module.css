@@ -6,12 +6,18 @@
 
 .slider_container {
     display: flex;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .box_img {
     width: 100%;
     min-width: 100vw;
     height: 90vh;
+    overflow-x: hidden;
 }
 
 .box_img > img {
