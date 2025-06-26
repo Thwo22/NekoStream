@@ -14,14 +14,13 @@ body, html {
 }
 
 .box_img {
-    width: 100%;
-    min-width: 100%;
     height: 90vh;
     overflow: hidden;
 }
 
-.box_img > img {
-    width: 100%;
+.box_img > img, .box_img {
+    width: 100vw;
+    min-width: 100vw;
     height: 90vh;
 }
 
