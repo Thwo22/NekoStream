@@ -328,17 +328,17 @@ body, html {
 
     .sessaoPopular {
         position: absolute;
-        top:85%;
+        top:100%;
     }
 
     .sessaoSeinen {
         position: absolute;
-        top: 105%;
+        top: 150%;
     }
 
     .sessaoLista {
         position: absolute;
-        top: 125%;
+        top: 200%;
         width: 100%;
         cursor: grab;
         user-select: none;
@@ -352,17 +352,17 @@ body, html {
     }
     .listaVazia {
         position: absolute;
-        top: 300%;
+        top: 500%;
         left: 10%;
     }
 
     .sessaoComedia {
         position: absolute;
-        top: 160%;
+        top: 250%;
     }
     .sessaoRomance {
         position: absolute;
-        top: 210%;
+        top: 300%;
     }
 
     .animes_da_sessao{
