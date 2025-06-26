@@ -9,7 +9,7 @@
     overflow-x: hidden;
 }
 
-body {
+body, html {
     overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@ body {
     width: 100%;
     min-width: 100vw;
     height: 90vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .box_img > img {
@@ -335,10 +335,6 @@ body {
         height: 50px;
     }
 
-    .container_logos > img {
-        width: 80px;
-    }
-
     .container_buttons > button {
         padding: 5px;
         font-size: 10px;
@@ -367,6 +363,13 @@ body {
         gap: 1px;
     }
 
+    .container_logos > img,
+    .jojos_logo > img,
+    .dbz_logo > img {
+    width: 100%;
+    max-width: 250px;
+    }
+
     .jujutsu_logo {
         top: 8%;
     }
@@ -383,18 +386,13 @@ body {
     .jojos_logo {
         top: 10%;
     }
-    .jojos_logo > img {
-        width: 80px;
-    }
+    
     .jojos ´{
         font-size: 11px;
     }
 
     .dbz_logo {
         top: 10%;
-    }
-    .dbz_logo > img {
-        width: 100px;
     }
 
     .animes_buttons input[type="radio"] {

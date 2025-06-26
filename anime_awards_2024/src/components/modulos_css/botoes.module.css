@@ -1,4 +1,7 @@
 
+body, html {
+    overflow-x: hidden;
+}
 
 .prev_button, .next_button{
     all: unset;

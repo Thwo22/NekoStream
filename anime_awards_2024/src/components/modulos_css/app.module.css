@@ -4,6 +4,10 @@
     --span-font: "Lato", sans-serif;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .container_das_sessoes {
     display: flex;
     flex-direction: column;

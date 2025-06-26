@@ -5,6 +5,10 @@
     --span-font: "Lato", sans-serif;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .anime_card {
     height: 250px;
     width: 200px;

@@ -4,6 +4,10 @@
     --span-font: "Lato", sans-serif;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .sessao {
     width: 100%;
     height: 250px;
@@ -33,7 +37,6 @@
     position: absolute;
     top: 278.3%;
     width: 99%;
-    left:1%;
     cursor: grab;
     user-select: none;
 }
@@ -110,7 +113,7 @@
     .sessaoLista {
         position: absolute;
         top: 281%;
-        width: 109%;
+        width: 100%;
         left:3%;
         cursor: grab;
         user-select: none;
@@ -141,7 +144,6 @@
         width: 100%;
         height: 230px;
         gap: 20px;
-        margin-right:4em;
     }
 }
 
@@ -186,7 +188,7 @@
     .sessaoLista {
         position: absolute;
         top: 259%;
-        width: 109%;
+        width: 100%;
         left:3%;
         cursor: grab;
         user-select: none;
@@ -217,7 +219,6 @@
         width: 100%;
         height: 230px;
         gap: 20px;
-        margin-right:4em;
     }
 }
 
@@ -262,7 +263,7 @@
     .sessaoLista {
         position: absolute;
         top: 230%;
-        width: 109%;
+        width: 100%;
         left:3%;
         cursor: grab;
         user-select: none;
@@ -293,7 +294,6 @@
         width: 100%;
         height: 230px;
         gap: 20px;
-        margin-right:4em;
     }
 }
 
@@ -339,8 +339,7 @@
     .sessaoLista {
         position: absolute;
         top: 200%;
-        width: 109%;
-        left:3%;
+        width: 100%;
         cursor: grab;
         user-select: none;
     }
@@ -370,7 +369,6 @@
         width: 100%;
         height: 230px;
         gap: 20px;
-        margin-right:4em;
     }
 }
 

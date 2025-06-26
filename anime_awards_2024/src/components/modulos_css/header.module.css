@@ -4,6 +4,10 @@
     --p-font: "Sen", sans-serif;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .mobile_menu {   
         display: none;
         position: absolute;
