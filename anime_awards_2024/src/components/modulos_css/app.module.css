@@ -6,7 +6,6 @@
 
 .container_das_sessoes {
     position: relative;
-    top: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -61,25 +60,24 @@ h2 {
 
 @media (min-width: 451px ) and (max-width:739px ) {
     .container_das_sessoes {
-    position: relative;
-    top: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 20px 0;
-    background-color: cadetblue;
-    height: 150em;
-}
+        position: relative;
+        top: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 20px 0;
+        background-color: cadetblue;
+        height: 150em;
+    }
 }
 
 @media (min-width: 200px ) and (max-width:450px ) {
     .container_das_sessoes {
-    position: relative;
-    top: 90%;
-    padding: 20px 0;
-    height: 90em;
-}
+        position: relative;
+        padding:  0 0 20px 0;
+        height: 100em;
+    }
 }   
 
 

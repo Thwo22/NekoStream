@@ -277,8 +277,7 @@
         top: 285%;
     }
     .sessaoRomance {
-        position: absolute;
-        top: 340%;
+        
     }
 
     .animes_da_sessao{
@@ -300,10 +299,7 @@
         padding: 0;
         margin: 0;
     }
-    
-    .sessaoAlta {
-        height: 40px;
-    }
+
 
     .sessaoAlta > .animes_da_sessao {
         height: 180px;
@@ -319,17 +315,7 @@
         margin: 0 0 -35px 1em;
     }
 
-    .sessaoPopular {
-        top:100%;
-    }
-
-    .sessaoSeinen {
-        top: 150%;
-    }
-
     .sessaoLista {
-
-        top: 200%;
         width: 100%;
         cursor: grab;
         user-select: none;
@@ -342,17 +328,9 @@
         cursor: grabbing;
     }
     .listaVazia {
-
+        position: relative;
         top: 500%;
         left: 10%;
-    }
-
-    .sessaoComedia {
-
-        top: 250%;
-    }
-    .sessaoRomance {
-        top: 300%;
     }
 
     .animes_da_sessao{
