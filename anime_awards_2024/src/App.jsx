@@ -19,12 +19,12 @@ function App() {
       <Header /> {/*Componente Header, onde se localiza as navs e outras funcionalidades*/}
       <Banner />  {/*Banner é o componente carrossel de alguns títulos de animes disponiveis no site*/}
       <div className={Styles.container_das_sessoes}> 
+        <SessaoAlta />
         <SessaoPopulares />
         <SessaoSeinen />
         <SessaoComedia />
         <SessaoLista />
         <SessaoRomance />
-        <SessaoAlta />
       </div>
     </MinhaListaProvider>
     </>
