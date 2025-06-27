@@ -65,7 +65,8 @@ body, html {
     height: 350px;
     gap: 20px;
     margin-right:4em;
-    overflow-x: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
     overflow-y: hidden;
 }
 
