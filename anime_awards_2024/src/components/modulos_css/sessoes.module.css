@@ -317,6 +317,10 @@
         height: 40px;
     }
 
+    .sessaoAlta > .animes_da_sessao {
+        height: 180px;
+    }
+
     .sessaoAlta h2 {
         font-size: 14px;
         margin: -25px 0 10px 1em;
