@@ -278,11 +278,11 @@ body, html {
         top: -120%;
         left: 0;
         width: 160px;
-        height: 200px;
+        height: 90px;
     }
 
     .info {
-        top: 70%;
+        top: -40%;
         height:80px;
         width: 150px;
         font-size: 11px;

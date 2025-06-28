@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 40px;
     padding: 20px 0;
-    background-color: brown;
+    margin: 50px 0 0 0 ;
 }
 
 .sessao{
@@ -27,7 +27,49 @@ h2 {
     color: #ececec;
 }
 
+.animes_da_sessao::-webkit-scrollbar {
+    display: none;
+}
+.animes_da_sessao img {
+    cursor: pointer;
+}
 
+
+@media (min-width: 901px) and (max-width:1200px) {
+    
+}
+
+@media (min-width: 740px) and (max-width:900px) {
+    
+}
+
+@media (min-width: 451px ) and (max-width:739px ) {
+    
+}
+
+@media (min-width: 200px ) and (max-width:450px )  {
+    .container_das_sessoes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.sessao{
+    width: 100%;
+    position: relative;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: -40px;
+    margin-left: 3em;
+    font-family: var(--span-font);
+    font-size: 15px ;
+    padding-left: 0;
+    color: #ececec;
+}
 
 .animes_da_sessao::-webkit-scrollbar {
     display: none;
@@ -36,3 +78,4 @@ h2 {
     cursor: pointer;
 }
 
+}

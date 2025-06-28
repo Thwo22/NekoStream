@@ -257,10 +257,11 @@ body, html {
     }
 
     .info {
-        top: -123%;
+        top: -150%;
         height:173px;
         width: 100px;
         font-size: 9px;
+        
         font-family: var(--span-font);
     }
 
@@ -277,6 +278,7 @@ body, html {
     .info_anime {
         height: 170px;
         width: 100%;
+        padding: 0 10px;
     }
 
     .controles {

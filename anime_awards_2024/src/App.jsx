@@ -15,9 +15,12 @@ function App() {
 
   return (
     <>
-    <MinhaListaProvider> {/*Minha lista provider pega todos os animes e os torna em objetos que podem ser adicionados a sua lista*/}
-      <Header /> {/*Componente Header, onde se localiza as navs e outras funcionalidades*/}
-      <Banner />  {/*Banner é o componente carrossel de alguns títulos de animes disponiveis no site*/}
+    <MinhaListaProvider>
+      <div className={Styles.container_superior}>
+        {/*Minha lista provider pega todos os animes e os torna em objetos que podem ser adicionados a sua lista*/}
+          <Header /> {/*Componente Header, onde se localiza as navs e outras funcionalidades*/}
+          <Banner />  {/*Banner é o componente carrossel de alguns títulos de animes disponiveis no site*/}
+      </div>
       <div className={Styles.container_das_sessoes}> 
         <SessaoAlta />
         <SessaoPopulares />
