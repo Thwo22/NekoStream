@@ -49,10 +49,9 @@ function SessaoAlta() {
     return (
             <div className={`${styles.sessao} ${styles.sessaoAlta}`}>
             <h2>Em Alta</h2>
+
+            <div className={styles.wrapper}><NavigationButtons scrollRef={scrollRef} /></div>
             <div className={styles.animes_da_sessao} ref={scrollRef}>
-                <div className={styles.wrapper}>
-                    <NavigationButtons scrollRef={scrollRef} />
-                </div>
 
                 {animesAlta.map((anime) => {
                 

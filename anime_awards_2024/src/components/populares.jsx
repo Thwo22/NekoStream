@@ -68,10 +68,10 @@ function SessaoPopulares() {
     return (
             <div className={`${styles.sessao} ${styles.sessaoPopular}`}>
             <h2>Popular</h2>
+
+            <div className={styles.wrapper}><NavigationButtons scrollRef={scrollRef} /></div>{/*este é o botão que controla o overflow-x do container*/}
             <div className={styles.animes_da_sessao} ref={scrollRef}>
-                <div className={styles.wrapper}>
-                    <NavigationButtons scrollRef={scrollRef} /> {/*este é o botão que controla o overflow-x do container*/}
-                </div>
+
                 {/*map das informações que o componente animecard (vertical) vai renderizar na tela.*/}
                 {animesPopulares.map((anime) => (
                     <AnimeCard

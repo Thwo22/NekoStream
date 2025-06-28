@@ -23,10 +23,10 @@ function SessaoComedia() {
     return (
         <div className={`${styles.sessao} ${styles.sessaoComedia}`}>
             <h2>Comédia</h2>
+
+            <div className={styles.wrapper}><NavigationButtons scrollRef={scrollRef} /></div>
             <div className={styles.animes_da_sessao} ref={scrollRef}>
-                <div className={styles.wrapper}>
-                    <NavigationButtons scrollRef={scrollRef} />
-                </div>
+
                 {animesComedia.map((anime) => (
                     <AnimeCard
                         key={anime.id}

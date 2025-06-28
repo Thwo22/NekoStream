@@ -6,11 +6,6 @@
 
 .slider_container {
     display: flex;
-    overflow-x: hidden;
-}
-
-body, html {
-    overflow-x: hidden;
 }
 
 .box_img {

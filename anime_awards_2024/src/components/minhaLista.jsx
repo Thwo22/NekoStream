@@ -63,7 +63,9 @@ function SessaoLista() {
     return (
         <div className={`${styles.sessao} ${styles.sessaoLista}`}>
             <h2>Sua Lista</h2>
-            
+
+            <div className={styles.wrapper}><NavigationButtons scrollRef={scrollRef} /></div>
+
             {/*CASO não tenha nenhum anime adicionado pelo usuário na sessão, o span dizendo "Voce ainda nao adicionou animes à lista" aparece*/}
             {minhaLista.length === 0 ? ( 
                 <p className={styles.listaVazia}>
@@ -71,9 +73,6 @@ function SessaoLista() {
                 </p>
             ) : (
                 <>
-                    <div className={styles.wrapper}>
-                        <NavigationButtons scrollRef={scrollRef} />
-                    </div>
                     <div className={styles.animes_da_sessao} ref={scrollRef}>
                         {minhaLista.map((anime) => (
                             <AnimeCard
