@@ -4,10 +4,6 @@
     --span-font: "Lato", sans-serif;
 }
 
-body, html {
-    overflow-x: hidden;
-}
-
 .container_das_sessoes {
     display: flex;
     flex-direction: column;
@@ -24,11 +20,10 @@ body, html {
 }
 
 h2 {
+    margin-bottom: -40px;
+    margin-left: 3em;
     font-family: var(--span-font);
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-    padding-left: 3em;
+    padding-left: 0;
     color: #ececec;
 }
 
