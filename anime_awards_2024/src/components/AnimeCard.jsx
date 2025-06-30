@@ -41,7 +41,7 @@ function AnimeCard({id, title, imageUrl, sinopse}) {
             <p className={styles.anime_title}>{title}</p>
             <div className={styles.info}>
                 <p>{title}</p>
-                <p className={styles.info_anime}>{sinopse}</p>
+                <span className={styles.info_anime}>{sinopse}</span>
                 <div className={styles.controles}>
                     <button className={styles.play_button}><img src={play} alt="play image" onClick={aviso}/></button> {/*chamada para a função de aviso!*/}
                     <button className={styles.addList_button} onClick={handleClick} title={estaNaLista ? "Remover da lista" : "Adicionar a Sua Lista"}> {/*chamada para a função de adicionar anime a lista ou remover.*/}

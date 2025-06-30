@@ -10,28 +10,45 @@ body, html {
 }
 
 .anime_card {
+    padding: 0;
+    padding: 0;
+    position: relative;
     height: 250px;
-    width: 200px;
+    width: 180px;
 }
 
 .anime_card img {
     height: 250px;
-    width: 170px;
+    width: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.anime_title {
+    font-size: 14px;
 }
 
 .info {
-    position: relative;
-    top: -135%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 180px;
+    max-height: 250px;
+
+    background-color: rgba(0, 0, 0, 0.829);
+    font-family: var(--span-font);
+    font-size: 12px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    font-family: var(--span-font);
-    background-color: rgba(0, 0, 0, 0.829);
-    height:285px;
-    width: 170px;
-    opacity: 0;
-    transition: opacity 0.1s ease;
+    padding: 0;
 }
 
 .anime_card:hover > .info {
@@ -41,20 +58,31 @@ body, html {
     opacity: 0;
 }
 .anime_card:hover > img {
-    height:280px;
+    height:270px;
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
 }
 
 .info_anime {
-    height: 170px;
-    width: 95%;
+    height: 100%;
+    width: 90%;
+    padding: 0;
+    margin: 0;
 }
 
 .controles {
+    background-color: #111111;
+    transition: background-color 0.4s ease;
+    padding: 1px;
+    position: absolute;
     display: flex;
+    top: 90%;
     align-items: center;
     justify-content: center;
     gap: 30px;
     width: 100%;
+    border-radius: 0 0 8px 8px;
+
 }
 
 .controles button {
@@ -63,7 +91,8 @@ body, html {
     justify-content: center;
     height: 20px;
     width: 20px;
-    padding: 20px;
+    padding: 16px;
+    margin:  10px 0;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -101,14 +130,6 @@ body, html {
         height: 190px;
     }
 
-    .info {
-        top: -117%;
-        height:205px;
-        width: 130px;
-        font-size: 12px;
-        font-family: var(--span-font);
-    }
-
     .anime_card:hover > .info {
         opacity: 1;
     }
@@ -117,11 +138,6 @@ body, html {
     }
     .anime_card:hover > img {
         height:205px;
-    }
-
-    .info_anime {
-        height: 170px;
-        width: 90%;
     }
 
     .controles {
@@ -173,16 +189,7 @@ body, html {
     height: 190px;
     }
 
-    .anime_card img {
-        width: 130px;
-        height: 190px;
-    }
-
     .info {
-        top: -117%;
-        height:205px;
-        width: 130px;
-        font-size: 12px;
         font-family: var(--span-font);
     }
 
@@ -253,15 +260,11 @@ body, html {
 
     .anime_card img {
         width: 100px;
-        height: 150px;
+        height: 100%;
     }
 
     .info {
-        top: -150%;
-        height:173px;
-        width: 100px;
         font-size: 9px;
-        
         font-family: var(--span-font);
     }
 
@@ -272,13 +275,13 @@ body, html {
         opacity: 0;
     }
     .anime_card:hover > img {
-        height:165px;
+        height:100%;
     }
 
     .info_anime {
-        height: 170px;
+        height: 100%;
         width: 100%;
-        padding: 0 10px;
+        padding: 0;
     }
 
     .controles {

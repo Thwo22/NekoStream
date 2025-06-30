@@ -35,7 +35,7 @@ body, html {
 }
 
 .video_preview {
-    position: absolute;
+    position: relative;
     top: 0%;
     left: 0;
     width: 350px;
@@ -54,20 +54,19 @@ body, html {
 }
 
 .info {
-    position: relative;
-    top: -1%;
+    position: absolute;
+    top:22%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 5px;
     gap: 2px;
-    background-color: rgb(27, 27, 27);
-    height:120px;
-    width: 350px;
+    background-color: rgba(8, 8, 8, 0.705);
+    width: 340px;
+    height: 190px;
     opacity: 0;
     transition: opacity 0.4s ease;
-    border-radius: 0 0 8px 8px;
-    z-index: 2;
+    z-index: 999;
 }
 
 .title_controles_episodeos {
