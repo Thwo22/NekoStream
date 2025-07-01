@@ -14,7 +14,7 @@ const bannerData = [
     {
         id: 0,
         logoImg: logoNaruto,
-        classLogo: styles.naruto,
+        classLogo: styles.naruto_logo,
         age: "+12",
         genres: ["SHONEN", "AVENTURA"],
         sinopse:
@@ -36,7 +36,7 @@ const bannerData = [
         age: "+14",
         genres: ["AVENTURA", "SOBRENATURAL"],
         sinopse:
-        "JoJo's Bizarre Adventure segue a linhagem da família Joestar, que possui habilidades sobrenaturais. Cada parte da série foca em um membro diferente da família e suas aventuras contra forças do mal.",
+        "JoJo's Bizarre Adventure segue a linhagem da família Joestar, que possui habilidades sobrenaturais.",
     },
     {
         id: 3,
@@ -85,19 +85,19 @@ function Banner() {
 
             <div className={styles.box_img}>
 
-                <img src={bannerJujutsu} alt="jujutsu-banner" />
+                <img src={bannerJujutsu} alt="jujutsu-banner"/>
 
             </div>
 
             <div className={styles.box_img}>
 
-                <img src={bannerJojo} alt="jojo-banner" />
+                <img src={bannerJojo} alt="jojo-banner"/>
 
             </div>
 
             <div className={styles.box_img}>
 
-                <img src={bannerDbz} alt="db-banner" />
+                <img src={bannerDbz} alt="db-banner"/>
 
             </div>
 
@@ -116,18 +116,20 @@ function Banner() {
                     <button className={styles.assistir_btn}>Assistir</button>
                     <button className={styles.episodeos_btn}>Episódeos</button>
                 </div>
-            </div>
 
-            <div className={styles.animes_buttons}>
-                <input type="radio" name="banner-radio" value={0} checked={currentSlide === 0} onChange={() => handleRadioClick(0)}/>
+                <div className={styles.animes_buttons}>
+                    <input type="radio" name="banner-radio" value={0} checked={currentSlide === 0} onChange={() => handleRadioClick(0)}/>
 
-                <input type="radio" name="banner-radio" value={1} checked={currentSlide === 1} onChange={() => handleRadioClick(1)}/>
+                    <input type="radio" name="banner-radio" value={1} checked={currentSlide === 1} onChange={() => handleRadioClick(1)}/>
 
-                <input type="radio" name="banner-radio" value={2} checked={currentSlide === 2} onChange={() => handleRadioClick(2)}/>
+                    <input type="radio" name="banner-radio" value={2} checked={currentSlide === 2} onChange={() => handleRadioClick(2)}/>
 
-                <input type="radio" name="banner-radio" value={3} checked={currentSlide === 3} onChange={() => handleRadioClick(3)}/>
+                    <input type="radio" name="banner-radio" value={3} checked={currentSlide === 3} onChange={() => handleRadioClick(3)}/>
                 
+                </div>
             </div>
+
+            
         </div>
     )
 }
