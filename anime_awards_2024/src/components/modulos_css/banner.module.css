@@ -8,11 +8,6 @@
     display: flex;
 }
 
-.box_img {
-    height: 90vh;
-    overflow: hidden;
-}
-
 .box_img > img, .box_img {
     width: 100vw;
     min-width: 100vw;
@@ -25,10 +20,6 @@
     left: 10%;
     width: 250px;
     height: 250px;
-}
-
-.container_logos > img {
-    width: 250px;
 }
 
 .container_buttons {
@@ -64,7 +55,7 @@
 
 .info_banner {
     position: relative;
-    top: -5%;
+    top: 0%;
     display: flex;
     align-items: center;
     margin: 0;
@@ -82,19 +73,20 @@
 .sinopse {
     position: relative;
     top: -20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-align: justify;
+    width: 20vw;
+    font-size:15px;
+    text-align: left;
 }
 
 .animes_buttons {
     display: flex;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
-    gap: 10px;
+    gap: 1px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .animes_buttons input[type="radio"] {
@@ -112,141 +104,24 @@
     border-radius: 50%;
 }
 
-.naruto_logo > p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
-
-.jujutsu_logo {
-    position: absolute;
+.naruto_logo, .jujutsu_logo, .jojos_logo, .dbz_logo {
+    left: 6%;
     top: 20%;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
 }
 
-.jujutsu_logo > p {
-    font-size: 22px;
-    padding: 0;
-    margin: 0;
-}
-
-.jujutsu_logo >img {
+.naruto_logo img, .jujutsu_logo img, .jojos_logo img, .dbz_logo img {
     width: 250px;
-    height: 100px;
-}
-
-.jojos_logo {
-    position: absolute;
-    top: 25%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.jojos_logo > img {
-    width: 200px;
-}
-
-.dbz_logo {
-    position: absolute;
-    top: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.dbz_logo > img {
-    width: 200px;
+    height: 150px;
 }
 
 @media (min-width: 740px) and (max-width:900px) {
-    .box_img {
-        height: 80vh;
-    }
-
-    .box_img > img {
-        height: 80vh;
-    }
-
-    .container_logos {
-        top: 15%;
-    }
-
-    .container_logos > img {
-        width: 200px;
-    }
-
-    .container_buttons > button {
-        padding: 6px;
-        font-size: 12px;
-    }
-
-    .info_banner {
-        top: -5%;
-    }
-
-    .info_banner > p {
-        padding: 5px;
-        font-size: 8px;
-    }
-
-    .sinopse {
-        width: 40vw;
-        top: -10px;
-        font-size: 13px;
-        text-align: left;
-    }
-
-    .animes_buttons {
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%);
-        gap: 1px;
-    }
-
-    .jujutsu_logo {
-        top: 15%;
-    }
-
-    .jujutsu_logo > p {
-        font-size: 11px;
-    }
-
-    .jujutsu_logo >img {
-        width: 180px;
-        height:60px;
-    }
-
-    .jojos_logo {
-        top: 15%;
-    }
-    .jojos_logo > img {
-        width: 150px;
-    }
-
-    .dbz_logo {
-        top: 12%;
-    }
-    .dbz_logo > img {
-        width: 150px;
-    }
-
-    .animes_buttons input[type="radio"] {
-    margin: 5px;
-    }
-}
-
-@media (min-width: 501px ) and (max-width:739px ) {
-    .box_img {
-        height: 60vh;
-    }
-
-    .box_img > img {
+    .box_img, .box_img > img{
         height: 60vh;
     }
 
     .container_logos {
-        top: 10%;
-    }
-
-    .container_logos > img {
-        width: 150px;
+    top: 60%;
+    left: 10%;
     }
 
     .container_buttons > button {
@@ -255,60 +130,125 @@
     }
 
     .info_banner {
-        top: -5%;
+        top: 0%;
     }
-
     .info_banner > p {
         padding: 5px;
-        font-size: 6px;
+        font-size: 8px;
     }
 
     .sinopse {
         width: 40vw;
         top: -10px;
-        font-size: 11px;
+        font-size: 16px;
         text-align: left;
     }
 
     .animes_buttons {
-        top: 55%;
+        top: 150%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translateX(-50%);
         gap: 1px;
+        padding: 10px;
     }
 
-    .jujutsu_logo {
-        top: 8%;
+    .naruto_logo, .jujutsu_logo, .jojos_logo, .dbz_logo {
+        left: 6%;
+        top: 25%;
     }
 
-    .jujutsu_logo > p {
-        font-size: 11px;
+    .naruto_logo img, .jujutsu_logo img, .jojos_logo img, .dbz_logo img {
+        width: 180px;
+        height: 100px;
     }
 
-    .jujutsu_logo >img {
-        width: 150px;
-        height:60px;
+    .container_buttons > button {
+    padding: 6px;
+    font-size: 12px;
     }
 
-    .jojos_logo {
-        top: 10%;
-    }
-    .jojos_logo > img {
-        width: 120px;
-    }
-    .jojos p {
-        font-size: 13px;
-    }
-
-    .dbz_logo {
-        top: 9%;
-    }
-    .dbz_logo > img {
-        width: 150px;
+    .animes_buttons {
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 1px;
+        padding: 10px;
     }
 
     .animes_buttons input[type="radio"] {
-    margin: 5px;
+        padding: 0;
+        width: 10px;
+        height: 5px;
+        margin: 2px;
+    }
+}
+
+@media (min-width: 501px ) and (max-width:739px ) {
+    .box_img, .box_img > img{
+        height: 60vh;
+    }
+
+    .container_logos {
+    top: 60%;
+    left: 10%;
+    }
+
+    .container_buttons > button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .info_banner {
+        top: 0%;
+    }
+    .info_banner > p {
+        padding: 5px;
+        font-size: 7px;
+    }
+
+    .sinopse {
+        width: 40vw;
+        top: -10px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .animes_buttons {
+        top: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 1px;
+        padding: 10px;
+    }
+
+    .naruto_logo, .jujutsu_logo, .jojos_logo, .dbz_logo {
+        left: 6%;
+        top: 25%;
+    }
+
+    .naruto_logo img, .jujutsu_logo img, .jojos_logo img, .dbz_logo img {
+        width: 180px;
+        height: 100px;
+    }
+
+    .container_buttons > button {
+    padding: 6px;
+    font-size: 12px;
+    }
+
+    .animes_buttons {
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 1px;
+        padding: 10px;
+    }
+
+    .animes_buttons input[type="radio"] {
+        padding: 0;
+        width: 10px;
+        height: 5px;
+        margin: 2px;
     }
 }
 
@@ -331,7 +271,6 @@
     .info_banner {
         top: 0%;
     }
-
     .info_banner > p {
         padding: 3px;
         font-size: 5px;
@@ -354,29 +293,12 @@
 
     .naruto_logo, .jujutsu_logo, .jojos_logo, .dbz_logo {
         left: 3%;
+        top: 25%;
     }
 
     .naruto_logo img, .jujutsu_logo img, .jojos_logo img, .dbz_logo img {
         width: 160px;
         height: 80px;
-    }
-
-    .naruto_logo {
-        top: 25%;
-    }
-    
-
-    .jujutsu_logo {
-        top: 25%;
-    }
-    
-
-    .jojos_logo {
-        top: 25%;
-    }
-    
-    .dbz_logo {
-        top: 25%;
     }
 
     .animes_buttons input[type="radio"] {
