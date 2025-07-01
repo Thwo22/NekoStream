@@ -117,7 +117,10 @@ function Banner() {
                     <button className={styles.episodeos_btn}>Episódeos</button>
                 </div>
 
-                <div className={styles.animes_buttons}>
+                
+            </div>
+
+            <div className={styles.animes_buttons}>
                     <input type="radio" name="banner-radio" value={0} checked={currentSlide === 0} onChange={() => handleRadioClick(0)}/>
 
                     <input type="radio" name="banner-radio" value={1} checked={currentSlide === 1} onChange={() => handleRadioClick(1)}/>
@@ -125,11 +128,7 @@ function Banner() {
                     <input type="radio" name="banner-radio" value={2} checked={currentSlide === 2} onChange={() => handleRadioClick(2)}/>
 
                     <input type="radio" name="banner-radio" value={3} checked={currentSlide === 3} onChange={() => handleRadioClick(3)}/>
-                
                 </div>
-            </div>
-
-            
         </div>
     )
 }

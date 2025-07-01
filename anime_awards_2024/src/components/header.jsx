@@ -6,7 +6,7 @@ import { useState } from "react"
 
 function Header() {
     
-    const [estaAtivo, setEstaAtivo] = useState(false); /*UseState que altera o estado do menu mobile (hamburguer).*/
+    const [estaAtivo, setEstaAtivo] = useState(true); /*UseState que altera o estado do menu mobile (hamburguer).*/
 
     const handleClick = () => {
         setEstaAtivo(prev => !prev);

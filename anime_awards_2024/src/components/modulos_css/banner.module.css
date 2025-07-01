@@ -90,9 +90,9 @@
 .animes_buttons {
     display: flex;
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     gap: 10px;
     cursor: pointer;
 }
@@ -345,9 +345,9 @@
     }
 
     .animes_buttons {
-        top: 100%;
+        top: 150%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translateX(-50%);
         gap: 1px;
         padding: 10px;
     }
