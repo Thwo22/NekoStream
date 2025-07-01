@@ -279,12 +279,12 @@
     .sinopse {
         width: 55vw;
         top: -10px;
-        font-size: 13px;
+        font-size: 14px;
         text-align: left;
     }
 
     .animes_buttons {
-        top: 150%;
+        top: 145%;
         left: 50%;
         transform: translateX(-50%);
         gap: 1px;
