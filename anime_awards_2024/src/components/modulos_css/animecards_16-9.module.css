@@ -10,12 +10,16 @@ body, html {
 }
 
 .anime_card {
+    position: relative;
     height: 200px;
     width: 350px;
     min-width: 350px;
 }
 
 .anime_card img {
+    position: relative;
+    padding: 0;
+    margin: 0;
     height: 200px;
     width: 350px;
 }
@@ -34,9 +38,8 @@ body, html {
 }
 
 .video_preview {
-    position: relative;
+    position: absolute;
     top: 0%;
-    left: 0%;
     width: 350px;
     height: 200px;
     z-index: 1;
@@ -54,7 +57,7 @@ body, html {
 
 .info {
     position: absolute;
-    top:22%;
+    top:0%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -271,29 +274,28 @@ body, html {
 
 @media (min-width: 200px ) and (max-width:450px )  {
     .anime_card {
-        width: 160px;
-        min-width: 160px;
-        height: 90px;
+        width: 320px;
+        min-width: 320px;
+        height: 180px;
     }
 
     .anime_card img {
-        height:90px;
-        width: 160px;
+        height:180px;
+        width: 320px;
     }
 
     .video_preview {
         top: 0%;
-        left: 0%;
-        width: 160px;
-        height: 90px;
+        width: 300px;
+        height: 180px;
     }
 
     .info {
-        top:30%;
-        height:91px;
-        width: 160px;
-        font-size: 11px;
+        height:180px;
+        width: 300px;
+        font-size: 13px;
         padding: 0px;
+        margin: 0;
         gap: 1px;
     }
 
