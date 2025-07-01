@@ -185,11 +185,17 @@ body, html {
 
 @media (min-width: 451px ) and (max-width:900px ) {
     .anime_card {
-    width: 130px;
-    height: 190px;
+    width: 140px;
+    height: 170px;
+    }
+
+    .anime_card img {
+        width: 130px;
+        height: 110%;
     }
 
     .info {
+        font-size: 9px;
         font-family: var(--span-font);
     }
 
@@ -200,12 +206,13 @@ body, html {
         opacity: 0;
     }
     .anime_card:hover > img {
-        height:205px;
+        height:100%;
     }
 
     .info_anime {
-        height: 170px;
-        width: 90%;
+        height: 100%;
+        width: 100%;
+        padding: 0;
     }
 
     .controles {
@@ -223,7 +230,7 @@ body, html {
         height: 15px;
         width: 15px;
         padding:15px;
-        margin-top: -30px;
+        margin-top: -55px;
         cursor: pointer;
         border-radius: 8px;
     }

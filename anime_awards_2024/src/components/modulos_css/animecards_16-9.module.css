@@ -10,7 +10,8 @@ body, html {
 }
 
 .anime_card {
-    margin-top: 3em;
+    margin: 3em 0 3em 0;
+    padding: 0 0 3em 0;
     position: relative;
     height: 200px;
     width: 350px;

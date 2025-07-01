@@ -2,19 +2,18 @@
 .animes_da_sessao {
     position: relative;
     display: flex;
-    align-items:  center;
+    align-items:  start;
+    justify-content: start;
     flex-direction: row;
     width: 100%;
-    height: 355px;
+    height: 345px;
     gap: 20px;
     margin: 0 0 0 1em;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;-ms-overflow-style: none;
     scrollbar-width: none;
-
 }
-
 
 .sessaoLista {
     height: 355px;
@@ -43,18 +42,11 @@
 
 @media (min-width: 451px ) and (max-width:739px ) {
     .animes_da_sessao {
-    position: relative;
-    display: flex;
-    align-items:  center;
-    flex-direction: row;
     width: 100%;
-    height: 230px;
+    height: 215px;
     gap: 20px;
     margin: 0 0 0 1em;
     overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;-ms-overflow-style: none;
-    scrollbar-width: none;
     }
 
     .sessaoLista {
@@ -79,18 +71,10 @@
 
 @media (min-width: 200px ) and (max-width:450px )  {
     .animes_da_sessao {
-    position: relative;
-    display: flex;
-    align-items:  center;
-    flex-direction: row;
     width: 100%;
     height: 230px;
     gap: 20px;
     margin: 0 0 0 1em;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;-ms-overflow-style: none;
-    scrollbar-width: none;
     }
 
     .sessaoLista {
