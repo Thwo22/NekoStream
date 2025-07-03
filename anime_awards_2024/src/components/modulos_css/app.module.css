@@ -47,7 +47,7 @@ h2 {
 
 @media (min-width:200px) and (max-width:450px) {
     h2 {
-        margin-bottom: -20px;
+        margin-bottom: -10px;
     }
 
     .meio {
