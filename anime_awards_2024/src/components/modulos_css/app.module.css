@@ -33,6 +33,18 @@ h2 {
     cursor: pointer;
 }
 
+@media (min-width:451px) and (max-width:739px) {
+    h2 {
+        margin-bottom: -20px;
+    }
+
+    .meio {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
 @media (min-width:200px) and (max-width:450px) {
     h2 {
         margin-bottom: -20px;
