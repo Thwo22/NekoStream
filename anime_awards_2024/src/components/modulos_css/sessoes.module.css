@@ -32,14 +32,6 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 901px) and (max-width:1200px) {
-    
-}
-
-@media (min-width: 740px) and (max-width:900px) {
-    
-}
-
 @media (min-width: 451px ) and (max-width:739px ) {
     .animes_da_sessao {
     width: 100%;
